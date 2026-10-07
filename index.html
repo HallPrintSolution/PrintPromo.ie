@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="PrintPromo.ie offers professional, in-house printing services based in Dublin, Ireland. Specializing in promotional items, branded merchandise, large format printing, and custom signage with fast turnaround times and sustainable options. Serving trade, startups, and end-users with tailored solutions for corporate events, marketing campaigns, and personalized gifts.">
+    <title>PrintPromo.ie</title>
+    <link rel="stylesheet" href="styles.css?v=20260623-1">
+</head>
+<body>
+    <!-- HERE IS THE HEADER WITH THE LOGO AND MENU -->
+    <header class="header">
+        <img src="images/logo.png" alt="Company Logo" class="logo">
+        <nav class="navbar">
+            <button class="close-menu" aria-label="Close navigation">&times;</button>
+            <a href="#about-us">About Us</a>
+            <a href="#promoproducts">Promo Products</a>
+            <a href="#printingservices">Printing and Services</a>
+            <a href="#seasonal">Seasonal</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#glossary">Printing Lingo</a>
+            <a href="contact.html">Contact</a>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/printpromo.ie/" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="images/li.png" alt="LinkedIn"></a>
+            </div>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+    <!-- HERE IS THE CAROSSEL BANNER -->
+    <section class="hero-banner">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/banner2.jpg" alt="Banner 2">
+                </div>
+                <div class="slide">
+                    <img src="images/banner3.jpg" alt="Banner 3">
+                </div>
+                <div class="slide">
+                    <img src="images/banner4.jpg" alt="Banner 4">
+                </div>
+                <div class="slide">
+                    <img src="images/banner5.jpg" alt="Banner 5">
+                </div>
+                <div class="slide">
+                    <img src="images/banner2.jpg" alt="Banner 2">
+                </div>
+            </div>
+            <div class="arrow prev" onclick="moveSlide('prev')"><img src="images/arrow-left.png" alt="previous"></div>
+            <div class="arrow next" onclick="moveSlide('next')"><img src="images/arrow-right.png" alt="next"></div>
+        </div>
+        <div class="carousel-indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+        <div class="scroll-arrow" id="scroll-arrow"><img src="images/arrow-down.png" alt="scroll-arrow"></div>
+    </section>
+    <!-- HERE IS THE DISPLAY CATALOGUE 2025 SECTION -->
+    <section class="section display-catalogue" id="display-catalogue">
+        <div class="container">
+            <span class="catalogue-label">New for 2025</span>
+            <h2>Display Catalogue 2025</h2>
+            <p>Explore our latest display range and find the right solution for your next campaign, event or branded space.</p>
+            <a href="pdfs/printpromo-display-catalogue-2025.pdf" class="catalogue-download-button" target="_blank" rel="noopener noreferrer">View Catalogue</a>
+        </div>
+    </section>
+    <!-- HERE IS THE ABOUT US SECTION  -->
+    <section class="section about-us" id="about-us">
+        <div class="container">
+            <h2>About PrintPromo.ie</h2>
+            <div class="about-section">
+                <img src="images/about.jpg" alt="About Us">
+                <div class="about-text">
+                    <p>Located in Tallaght, Dublin, PrintPromo.ie is a customer-focused promotional print company, specializing in high-quality swag for every event. <br><br>
+                       Unlike many promotional companies, PrintPromo.ie boasts its own industrial and versatile in-house, multi-award-winning print department. <br><br>
+                       We take pride in offering innovative print solutions and are committed to excellence, providing urgent and bespoke print finishes for both trade clients and end customers.</p>
+                </div>
+            </div>
+            <h3>Our Processes</h3>
+            <div class="about-section">
+                <div class="about-text">
+                    <p>At PrintPromo.ie, we specialize in printing both flat and 3D objects using a variety of techniques, including: </p>
+                    <ul>
+                        <li>Industrial screen printing</li>
+                        <li>Rotary printing</li>
+                        <li>Pad Printing</li>
+                        <li>Laser engraving</li>
+                        <li>DTF transfer</li>
+                        <li>Large format printing</li>
+                        <li>Giclee printing</li>
+                        <li>Hand printing or machine printing</li>
+                    </ul>
+                    <p><strong>Specialised ink finishes:</strong> We offer a wide range of specialized ink finishes, such as: Fluorescent inks, Phosphorescent inks, Metallic inks, Pure Pantone inks and Spot colours</p>
+                    <p><strong>Printing:</strong> We print on a wide variety of materials, including: Wood, Metal, Powder-coated products, Concrete, Fabric, Paper, Tissue, Plastics, Leather, Glass</p>
+                    <p>
+                        Our in-house graphic design studio, combined with cutting-edge large-format printing and finishing equipment, allows us to meet the highest standards for both local and international clients. We proudly serve many of Ireland's trade printers and prestigious corporate brands, delivering detailed, technical finishes across a wide range of products.
+                    </p>
+                    <p>No matter the size, complexity, or urgency of your project, we're ready to take it on. Speak to us about your printing needs, and we'll deliver exceptional results with reliability and precision.</p>
+                </div>
+                <img src="images/processes.jpg" alt="Our Processes">
+            </div> 
+        </div>
+    </section>
+    <!-- HERE IS THE SUPPORT LOCAL BUSINESSES -->
+    <div class="section support-local">
+        <div class="container">
+            <h2>Support Local Businessess</h2>
+            <div class="values-container">
+                <div class="value" data-animate="true">
+                    <div class="icon" data-animate="true"><img src="images/pin.png" alt="Designed in Dublin" data-animate="true"></div>
+                    <div>
+                        <h4>DESIGNED in DUBLIN</h4>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="icon"><img src="images/harp.png" alt="Manufactured in Dublin"></div>
+                    <div>
+                        <h4>MANUFACTURED in DUBLIN</h4>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="icon"><img src="images/ireland.png" alt="Irish Company"></div>
+                    <div>
+                        <h4>IRISH COMPANY</h4>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>    
+    <!-- HERE IS THE PRODUCTS SECTION -->
+    <section class="section promo-products" id="promoproducts">
+        <div class="container">
+            <h2>Promo Products</h2>
+            <div class="grid">
+                <div class="button" onclick="showProduct('product1')">
+                    <a href="#product-details">Apparel & Accessories</a>
+                </div>
+                <div class="button" onclick="showProduct('product2')">
+                    <a href="#product-details">Bags & Travel</a>
+                </div>
+                <div class="button" onclick="showProduct('product3')">
+                    <a href="#product-details">Eating & Drinking</a>
+                </div>
+                <div class="button" onclick="showProduct('product4')">
+                    <a href="#product-details">Seasonal Range</a>
+                </div>
+                <div class="button" onclick="showProduct('product5')">
+                    <a href="#product-details">Technology & Accessories</a>
+                </div>        
+                <div class="button" onclick="showProduct('product6')">
+                    <a href="#product-details">Umbrellas & Rain Garments</a>
+                </div>
+                <div class="button" onclick="showProduct('product7')">
+                    <a href="#product-details">Eco Product Range</a>
+                </div>
+                <div class="button" onclick="showProduct('product8')">
+                    <a href="#product-details">Office & Writing</a>
+                </div>
+            </div>
+            <div class="product-details" id="product-details">
+                <!-- Details will change based on button click -->
+            </div>
+            <div>
+                <a href="#promoproducts" class="backto-button">back to products</a>
+            </div>
+        </div>    
+    </section>
+    <!-- HERE IS THE PREMIUM BRANDS -->
+    <section class="section our-brands" style="background-color: rgb(252, 236, 217); padding: 15px 0;">
+        <div class="container" style="padding: 0;">
+            <h2>Looking for Premium?</h2>
+            <div class="brands-container">
+                <img src="images/stanley.png" alt="Stanley">
+                <img src="images/yeti.png" alt="Yeti">
+                <img src="images/keep-cup.png" alt="Keep Cup">
+                <img src="images/ecoset.png" alt="Ecoset">
+                <img src="images/hydro-flask.png" alt="Hydro Flask">
+                <img src="images/circular-and-co.png" alt="Circular and Co.">
+                <img src="images/contigo.png" alt="Contigo">
+                <div style="padding-top: 5px;">
+                    <a href="pdfs/premiumcatalogue.pdf" class="range-button" target="_blank">view our premium range catalogue</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERE IS THE SERVICES SECTION -->
+    <section class="section printing-services" id="printingservices">
+        <div class="container">
+            <h2>Printing Services</h2>
+            <div class="grid">
+                <div class="button2" onclick="showService('service1')">
+                    <a href="#services-details">Outdoor Display & Events</a>
+                </div>
+                <div class="button2" onclick="showService('service2')">
+                    <a href="#services-details">Internal Display & Finishing</a>
+                </div>
+                <div class="button2" onclick="showService('service3')">
+                    <a href="#services-details">Vehicle Wraps</a>
+                </div>
+                <div class="button2" onclick="showService('service4')">
+                    <a href="#services-details">Sign Panels & Advertising</a>
+                </div>
+                <div class="button2" onclick="showService('service5')">
+                    <a href="#services-details">Branded Glassware</a>
+                </div>        
+                <div class="button2" onclick="showService('service6')">
+                    <a href="#services-details">Large Format Print</a>
+                </div>
+                <div class="button2" onclick="showService('service7')">
+                    <a href="#services-details">Last Minute Print</a>
+                </div>
+                <div class="button2" onclick="showService('service8')">
+                    <a href="#services-details">Wall & Glass Manifestations</a>
+                </div>
+            </div>
+            <div class="product-details" id="services-details">
+                <!-- Details will change based on button click -->
+            </div>
+            <div>
+                <a href="#printingservices" class="backto-button" style="background-color: #0386dd;">back to services</a>
+            </div>
+        </div>    
+    </section>
+    <!-- HERE IS THRE BROCHURES SECTION -->
+    <section class="section seasonal-brochures" id="seasonal">
+        <div class="container">
+            <h2>Seasonal Brochures</h2>
+            <div class="brochures-grid">
+                <a href="pdfs/PRINTPROMO CATALOGUE 2025.pdf" target="_blank" class="brochure-item">
+                    <img src="images/brochure1.jpg" alt="sustainable brochure">
+                </a>
+                <a href="pdfs/PRINTPROMO Conscious promotions 2025.pdf" target="_blank" class="brochure-item">
+                    <img src="images/brochure2.jpg" alt="2024 catalogue">
+                </a>
+                <a href="pdfs/PRINTPROMO GIFTS 2025.pdf" target="_blank" class="brochure-item">
+                    <img src="images/brochure3.jpg" alt="more ideas catalogue">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- HERE IS THE RECENT WORK GALLERY -->
+    <section class="section recent-work" id="gallery">
+        <div class="full-width-background">
+            <div class="recent-work-inner">
+                <h2>Gallery</h2>
+                <div class="gallery-container">
+                    <div class="gallery-arrow gallery-prev" onclick="moveGallery('prev')"><img src="images/arrow-left.png" alt="previous"></div>
+                    <div class="gallery-wrapper">
+                        <div class="gallery">
+                            <img src="images/work1.jpg" alt="Work 1">
+                            <img src="images/work2.jpg" alt="Work 2">
+                            <img src="images/work3.jpg" alt="Work 3">
+                            <img src="images/work4.jpg" alt="Work 4">
+                            <img src="images/work5.jpg" alt="Work 5">
+                            <img src="images/work6.jpg" alt="Work 6">
+                            <img src="images/work7.jpg" alt="Work 7">
+                            <img src="images/work8.jpg" alt="Work 8">
+                            <img src="images/work9.jpg" alt="Work 9">
+                            <img src="images/work10.jpg" alt="Work 10">
+                            <img src="images/work11.jpg" alt="Work 11">
+                            <img src="images/work12.jpg" alt="Work 12">
+                            <img src="images/work13.jpg" alt="Work 13">
+                            <img src="images/work14.jpg" alt="Work 14">
+                            <img src="images/work15.jpg" alt="Work 15">
+                            <img src="images/work16.jpg" alt="Work 16">
+                            <img src="images/work17.jpg" alt="Work 17">
+                            <img src="images/work18.jpg" alt="Work 18">
+                            <img src="images/work19.jpg" alt="Work 19">
+                            <img src="images/work20.jpg" alt="Work 20">
+
+                        </div>
+                    </div>
+                    <div class="gallery-arrow gallery-next" onclick="moveGallery('next')"><img src="images/arrow-right.png" alt="next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERE IS THE OUR CLIENTS SECTION -->
+    <section class="section our-brands">
+        <div class="container">
+            <h2>Our Clients</h2>
+            <div class="brands-container">
+                <img src="images/client-logo01.png" alt="Kerry">
+                <img src="images/client-logo02.png" alt="Heineken">
+                <img src="images/client-logo03.png" alt="Islands Edge">
+                <img src="images/client-logo04.png" alt="Court Service">
+                <img src="images/client-logo05.png" alt="TU Dublin">
+                <img src="images/client-logo06.png" alt="Waterlogic">
+                <img src="images/client-logo07.png" alt="Draft Kings">
+                <img src="images/client-logo08.png" alt="DPD">
+            </div>
+        </div>
+    </section>
+    <!-- HERE IS THE GLOSSARY -->
+    <section class="section glossary" id="glossary">
+        <div class="container">
+            <h2>Printing Lingo</h2>
+            <div class="glossary-grid">
+                <!-- Example word 1 -->
+                <div class="glossary-item" data-modal="glossaryModal1">
+                    <span>Bleed</span>
+                </div>
+        
+                <!-- Example word 2 -->
+                <div class="glossary-item" data-modal="glossaryModal2">
+                    <span>CMYK</span>
+                </div>
+
+                <!-- Vector File -->
+                <div class="glossary-item" data-modal="glossaryModal3">
+                    <span>Vector File</span>
+                </div>
+
+                <!-- High Resolution -->
+                <div class="glossary-item" data-modal="glossaryModal4">
+                    <span>High Resolution</span>
+                </div>
+
+                <!-- Screen Print -->
+                <div class="glossary-item" data-modal="glossaryModal5">
+                    <span>Screen Print</span>
+                </div>
+
+                <!-- Pantone -->
+                <div class="glossary-item" data-modal="glossaryModal6">
+                    <span>Pantone</span>
+                </div>
+
+                <!-- Digital Print -->
+                <div class="glossary-item" data-modal="glossaryModal7">
+                    <span>Digital Print</span>
+                </div>
+
+                <!-- Plotting -->
+                <div class="glossary-item" data-modal="glossaryModal8">
+                    <span>Plotting</span>
+                </div>
+
+                <!-- Halftone -->
+                <div class="glossary-item" data-modal="glossaryModal9">
+                    <span>Halftone</span>
+                </div>
+
+                <!-- Litho Print -->
+                <div class="glossary-item" data-modal="glossaryModal10">
+                    <span>Litho Print</span>
+                </div>
+
+                <!-- Pad Print -->
+                <div class="glossary-item" data-modal="glossaryModal11">
+                    <span>Pad Print</span>
+                </div>
+
+                <!-- Digital Transfer -->
+                <div class="glossary-item" data-modal="glossaryModal12">
+                    <span>Digital Transfer</span>
+                </div>
+
+                <!-- Embroidery -->
+                <div class="glossary-item" data-modal="glossaryModal13">
+                    <span>Embroidery</span>
+                </div>
+
+                <!-- Full-Colour -->
+                <div class="glossary-item" data-modal="glossaryModal14">
+                    <span>Full-Colour</span>
+                </div>
+
+                <!-- Overprint -->
+                <div class="glossary-item" data-modal="glossaryModal15">
+                    <span>Overprint</span>
+                </div>
+
+                <!-- Die Cutting -->
+                <div class="glossary-item" data-modal="glossaryModal16">
+                    <span>Die Cutting</span>
+                </div>
+
+                <!-- Spot UV -->
+                <div class="glossary-item" data-modal="glossaryModal17">
+                    <span>Spot UV</span>
+                </div>
+
+                <!-- Embossing -->
+                <div class="glossary-item" data-modal="glossaryModal18">
+                    <span>Embossing</span>
+                </div>
+        
+                <!-- Add more glossary items as needed -->
+            </div>
+        
+            <!-- Modals -->
+            <!-- Modal for Bleed -->
+            <div id="glossaryModal1" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Bleed</h2>
+                    <img src="images/bleed-icon.png" alt="Bleed Icon">
+                    <p>A term used in printing that refers to the area beyond the edge of the final printed page.</p>
+                </div>
+            </div>
+        
+            <!-- Modal for CMYK -->
+            <div id="glossaryModal2" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>CMYK</h2>
+                    <img src="images/cmyk-icon.png" alt="CMYK Icon">
+                    <p>CMYK is a color model used in color printing that stands for Cyan, Magenta, Yellow, and Key (black).</p>
+                </div>
+            </div>
+
+            <!-- Modal for Vector File -->
+            <div id="glossaryModal3" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Vector File</h2>
+                    <img src="images/vector-file-icon.png" alt="Vector File Icon">
+                    <p>A vector file is a type of graphic that uses mathematical equations to create shapes, lines, and colors. This allows the image to be scaled infinitely without losing quality.</p>
+                </div>
+            </div>
+
+            <!-- Modal for High Resolution -->
+            <div id="glossaryModal4" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>High Resolution</h2>
+                    <img src="images/high-resolution-icon.png" alt="High Resolution Icon">
+                    <p>High resolution refers to images or displays with a large number of pixels, resulting in finer detail and clarity.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Screen Print -->
+            <div id="glossaryModal5" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Screen Print</h2>
+                    <img src="images/screen-print-icon.png" alt="Screen Print Icon">
+                    <p>Screen printing is a method of printing where ink is pushed through a screen or mesh stencil onto a surface, creating designs or images.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Pantone -->
+            <div id="glossaryModal6" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Pantone</h2>
+                    <img src="images/pantone-icon.png" alt="Pantone Icon">
+                    <p>Pantone is a standardized color matching system used in printing and design to ensure consistency of colors across different materials and devices.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Digital Print -->
+            <div id="glossaryModal7" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Digital Print</h2>
+                    <img src="images/digital-print-icon.png" alt="Digital Print Icon">
+                    <p>Digital print refers to printing directly from a digital file, allowing for quick and cost-effective production of materials like photos and documents.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Plotting -->
+            <div id="glossaryModal8" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Plotting</h2>
+                    <img src="images/plotting-icon.png" alt="Plotting Icon">
+                    <p>Plotting involves creating precise graphics and designs using plotter machines, often for technical drawings or large-scale prints.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Halftone -->
+            <div id="glossaryModal9" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Halftone</h2>
+                    <img src="images/halftone-icon.png" alt="Halftone Icon">
+                    <p>Halftone is a technique that simulates continuous-tone images by using dots of varying size and spacing to create the illusion of gradient tones.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Litho Print -->
+            <div id="glossaryModal10" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Litho Print</h2>
+                    <img src="images/litho-print-icon.png" alt="Litho Print Icon">
+                    <p>Litho print, or lithography, is a printing process where an image is created on a flat surface and ink is applied to the image area, transferring it to paper or other materials.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Pad Print -->
+            <div id="glossaryModal11" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Pad Print</h2>
+                    <img src="images/pad-print-icon.png" alt="Pad Print Icon">
+                    <p>Pad printing is a process where ink is transferred from a plate to a silicone pad and then onto the printing surface, suitable for printing on irregular shapes.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Digital Transfer -->
+            <div id="glossaryModal12" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Digital Transfer</h2>
+                    <img src="images/digital-transfer-icon.png" alt="Digital Transfer Icon">
+                    <p>Digital transfer is a method where designs are printed onto transfer paper and then applied to various surfaces, often used for customizing apparel and products.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Embroidery -->
+            <div id="glossaryModal13" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Embroidery</h2>
+                    <img src="images/embroidery-icon.png" alt="Embroidery Icon">
+                    <p>Embroidery is the craft of decorating fabric using needle and thread to create patterns or designs, commonly used on clothing and accessories.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Full-Colour -->
+            <div id="glossaryModal14" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Full-Colour</h2>
+                    <img src="images/full-colour-icon.png" alt="Full-Colour Icon">
+                    <p>Full-colour printing uses a wide range of colors to reproduce images and designs in a wide spectrum, typically involving the CMYK color model.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Overprint -->
+            <div id="glossaryModal15" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Overprint</h2>
+                    <img src="images/overprint-icon.png" alt="Overprint Icon">
+                    <p>Overprint is a technique where one color is printed over another, often used to create rich colors or special effects without leaving gaps between the different ink layers.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Die Cutting -->
+            <div id="glossaryModal16" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Die Cutting</h2>
+                    <img src="images/die-cutting-icon.png" alt="Die Cutting Icon">
+                    <p>Die cutting is the process of cutting shapes from printed material using a sharp steel blade to create custom designs, such as labels or packaging.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Spot UV -->
+            <div id="glossaryModal17" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Spot UV</h2>
+                    <img src="images/spot-uv-icon.png" alt="Spot UV Icon">
+                    <p>Spot UV is a finishing technique where a glossy UV coating is applied to specific areas of a printed piece to create visual contrast and enhance its appearance.</p>
+                </div>
+            </div>
+            
+            <!-- Modal for Embossing -->
+            <div id="glossaryModal18" class="glossary-modal">
+                <div class="glossary-modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Embossing</h2>
+                    <img src="images/embossing-icon.png" alt="Embossing Icon">
+                    <p>Embossing is a technique that presses a raised design into the material, creating a three-dimensional effect on the surface of printed materials for a tactile and visual impact.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- HERE IS THE FOOTER -->
+    <div class="footer-wrapper">
+        <footer class="footer" id="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="images/logo.png" alt="Company Logo" class="logo">
+                    <div class="contact-info">
+                        <div>Unit B6, South City Business Centre <br/>Whitestown Way, Tallaght <br/>Dublin 24</div>
+						<div><strong>Phone:</strong> 01 404 5145</div>
+						<div><strong>Email:</strong> <a href="mailto:sales@printpromo.ie">sales@printpromo.ie</a></div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/printpromo.ie/" target="_blank"><img src="images/igw.png" alt="Instagram"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="images/liw.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.5468905484363!2d-6.375996299999999!3d53.2797378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486774ced52146ad%3A0xec483c20144a6cc9!2sHall%20Print%20Solutions!5e0!3m2!1sen!2sie!4v1721646984410!5m2!1sen!2sie" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <div class="back-to-top" id="back-to-top">Back to top &#9650;</div>
+    <!-- LINK TO JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

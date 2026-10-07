@@ -1,0 +1,16 @@
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+
+.env
+.env.*
+!.env.example
+
+private/mail_config.php
+private/db_config.php
+
+*.log
+*.bak
+*.old
+pdfs/

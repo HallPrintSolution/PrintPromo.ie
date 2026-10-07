@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact PrintPromo.ie in Tallaght, Dublin. Request a quote for promotional products, branded merchandise, large format printing, vehicle wraps and signage. In-house print department, fast turnaround.">
+    <title>Contact & Request a Quote | PrintPromo.ie Dublin</title>
+    <link rel="canonical" href="https://www.printpromo.ie/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact & Request a Quote | PrintPromo.ie Dublin">
+    <meta property="og:description" content="Tell us about your project and our team will get back to you with the next steps. Promotional print produced in Dublin.">
+    <meta property="og:url" content="https://www.printpromo.ie/contact.html">
+    <meta property="og:image" content="https://www.printpromo.ie/images/logo.png">
+
+    <link rel="stylesheet" href="styles.css?v=20260623-1">
+    <link rel="stylesheet" href="contact.css?v=1">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html"><img src="images/logo.png" alt="PrintPromo.ie Logo" class="logo"></a>
+        <nav class="navbar">
+            <button class="close-menu" aria-label="Close navigation">&times;</button>
+            <a href="index.html#about-us">About Us</a>
+            <a href="index.html#promoproducts">Promo Products</a>
+            <a href="index.html#printingservices">Printing and Services</a>
+            <a href="index.html#seasonal">Seasonal</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#glossary">Printing Lingo</a>
+            <a href="contact.html" class="current">Contact</a>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/printpromo.ie/" target="_blank" rel="noopener"><img src="images/ig.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/printpromo-ie/" target="_blank" rel="noopener"><img src="images/li.png" alt="LinkedIn"></a>
+            </div>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+
+    <!-- CONTACT INTRO -->
+    <section class="contact-hero">
+        <div class="container">
+            <span class="contact-eyebrow">PRINTPROMO.IE DUBLIN</span>
+            <h1>Contact PrintPromo.ie</h1>
+            <p class="contact-sub">Tell us about your project and our team will review your requirements and get back to you with the next steps.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT BODY -->
+    <section class="contact-body">
+        <div class="container contact-grid">
+
+            <!-- LEFT: CONTACT INFO -->
+            <aside class="contact-info-card">
+                <h2>Contact Information</h2>
+                <div class="info-block">
+                    <strong>PrintPromo.ie</strong>
+                    <p>Unit B6, South City Business Centre<br>
+                       Whitestown Way<br>
+                       Tallaght<br>
+                       Dublin<br>
+                       D24 V227</p>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-block">
+                    <span class="info-label">PHONE</span>
+                    <a href="tel:+35314045145" class="info-link">01 404 5145</a>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-block">
+                    <span class="info-label">EMAIL</span>
+                    <a href="mailto:enquiries@printpromo.ie" class="info-link">enquiries@printpromo.ie</a>
+                </div>
+            </aside>
+
+            <!-- RIGHT: QUOTE FORM -->
+            <div class="quote-card">
+                <h2>Request a Quote</h2>
+                <p class="quote-intro">Provide a few details about your project so we can understand your requirements before getting in touch.</p>
+
+                <form id="quoteForm" action="save_contact.php" method="POST" enctype="multipart/form-data" novalidate>
+
+                    <!-- Honeypot anti-spam: hidden from humans, bots fill it -->
+                    <div class="hp-field" aria-hidden="true">
+                        <label for="website">Website</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="company">Company Name <span class="req">*</span></label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="contact_name">Contact Name <span class="req">*</span></label>
+                            <input type="text" id="contact_name" name="contact_name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email Address <span class="req">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number <span class="opt">Optional</span></label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="product_service">Product / Service <span class="req">*</span></label>
+                            <select id="product_service" name="product_service" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <optgroup label="Promo Products">
+                                    <option>Apparel &amp; Accessories</option>
+                                    <option>Bags &amp; Travel</option>
+                                    <option>Eating &amp; Drinking</option>
+                                    <option>Seasonal Range</option>
+                                    <option>Technology &amp; Accessories</option>
+                                    <option>Umbrellas &amp; Rain Garments</option>
+                                    <option>Eco Product Range</option>
+                                    <option>Office &amp; Writing</option>
+                                </optgroup>
+                                <optgroup label="Printing Services">
+                                    <option>Outdoor Display &amp; Events</option>
+                                    <option>Internal Display &amp; Finishing</option>
+                                    <option>Vehicle Wraps</option>
+                                    <option>Sign Panels &amp; Advertising</option>
+                                    <option>Branded Glassware</option>
+                                    <option>Large Format Print</option>
+                                    <option>Last Minute Print</option>
+                                    <option>Wall &amp; Glass Manifestations</option>
+                                </optgroup>
+                                <option>Other / Not sure</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="quantity">Approximate Quantity <span class="req">*</span></label>
+                            <input type="text" id="quantity" name="quantity" placeholder="e.g. 250" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="required_date">Required Date <span class="opt">Optional</span></label>
+                            <input type="date" id="required_date" name="required_date">
+                        </div>
+                        <div class="form-field">
+                            <label for="artwork_status">Artwork Status <span class="opt">Optional</span></label>
+                            <select id="artwork_status" name="artwork_status">
+                                <option value="" disabled selected>Select an option</option>
+                                <option>Print-ready artwork available</option>
+                                <option>Logo only, needs setup</option>
+                                <option>No artwork yet, need design help</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field full">
+                        <label for="details">Project Details <span class="req">*</span></label>
+                        <textarea id="details" name="details" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-field full">
+                        <label for="artwork">Attach Logo or Artwork <span class="opt">Optional</span></label>
+                        <input type="file" id="artwork" name="artwork" accept=".png,.jpg,.jpeg,.pdf,.svg,.ai">
+                        <p class="field-hint">PNG, JPG, PDF, SVG or AI &middot; Maximum 8 MB</p>
+                        <p class="field-note">Don't have finished artwork? You can still submit your request and our in-house design studio can help prepare it.</p>
+                    </div>
+
+                    <p class="consent">By submitting this form, you agree that PrintPromo.ie may use the information provided to respond to your enquiry.</p>
+                    <p class="req-note"><span class="req">*</span> Required fields</p>
+
+                    <button type="submit" class="submit-btn">Send Quote Request</button>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISIT US / MAP -->
+    <section class="visit-us">
+        <div class="container visit-grid">
+            <div class="visit-text">
+                <span class="info-label">LOCATION</span>
+                <h2>Visit Us</h2>
+                <p>Our Dublin production team is based in South City Business Centre in Tallaght.</p>
+                <div class="info-block">
+                    <strong>PrintPromo.ie</strong>
+                    <p>Unit B6, South City Business Centre<br>
+                       Whitestown Way, Tallaght<br>
+                       Dublin 24</p>
+                </div>
+                <a href="tel:+35314045145" class="info-link">01 404 5145</a><br>
+                <a href="mailto:enquiries@printpromo.ie" class="info-link">enquiries@printpromo.ie</a>
+            </div>
+            <div class="visit-map">
+                <iframe
+                    title="PrintPromo.ie location in Tallaght, Dublin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.5468905484363!2d-6.375996299999999!3d53.2797378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486774ced52146ad%3A0xec483c20144a6cc9!2sHall%20Print%20Solutions!5e0!3m2!1sen!2sie!4v1721646984410!5m2!1sen!2sie"
+                    loading="lazy" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <img src="images/logo.png" alt="PrintPromo.ie Logo" class="footer-logo">
+                <p>Professional promotional print and branded merchandise, produced in-house in Dublin.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/printpromo.ie/" target="_blank" rel="noopener"><img src="images/igw.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/printpromo-ie/" target="_blank" rel="noopener"><img src="images/liw.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#promoproducts">Promo Products</a></li>
+                    <li><a href="index.html#printingservices">Printing Services</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Contact</h3>
+                <p><strong>PrintPromo.ie</strong><br>
+                   Unit B6, South City Business Centre<br>
+                   Whitestown Way, Tallaght<br>
+                   Dublin 24</p>
+                <p><a href="tel:+35314045145" class="footer-contact">01 404 5145</a><br>
+                   <a href="mailto:enquiries@printpromo.ie" class="footer-contact">enquiries@printpromo.ie</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <span>&copy; 2026 PrintPromo.ie</span>
+                <a href="#" class="back-top-link">Back to top &#9650;</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js?v=1"></script>
+</body>
+</html>
