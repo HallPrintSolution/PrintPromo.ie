@@ -1,5 +1,18 @@
 // script.js
 
+// Track contact-link clicks without sending the destination or other personal data.
+document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+
+    const href = link.getAttribute('href').toLowerCase();
+    if (href.startsWith('tel:')) {
+        gtag('event', 'phone_click');
+    } else if (href.startsWith('mailto:')) {
+        gtag('event', 'email_click');
+    }
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

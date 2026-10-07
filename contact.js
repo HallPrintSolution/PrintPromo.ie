@@ -1,5 +1,18 @@
 // contact.js — mobile menu + quote form submission
 
+// Track contact-link clicks without sending the destination or other personal data.
+document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+
+    const href = link.getAttribute('href').toLowerCase();
+    if (href.startsWith('tel:')) {
+        gtag('event', 'phone_click');
+    } else if (href.startsWith('mailto:')) {
+        gtag('event', 'email_click');
+    }
+});
+
 // --- Mobile menu (same behaviour as the main site) ---
 const menuToggle = document.querySelector('.menu-toggle');
 const closeMenuButton = document.querySelector('.close-menu');
