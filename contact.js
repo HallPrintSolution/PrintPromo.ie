@@ -48,6 +48,11 @@ if (form) {
                     // window.location.href = 'thank-you.html';
                     showStatus('success', res.message || 'Thank you. Your request has been sent — we\'ll be in touch shortly.');
                     form.reset();
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'generate_lead', {
+                            method: 'contact_form'
+                        });
+                    }
                 } else {
                     showStatus('error', res.message || 'Something went wrong. Please try again or email us directly.');
                 }
